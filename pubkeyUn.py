@@ -1,5 +1,5 @@
-# start_private_key = "0000000000000000000000000000000000000000000000040000000000000000"
-# private_key_range = 40000000000000000:7ffffffffffffffff
+# start_private_key = "0000000000000000000000000000000000000000000000000000000000000000"
+# private_key_range = 10000000000000000:fffffffffffffffff
 
 import os
 from ecdsa import SigningKey, SECP256k1
@@ -23,7 +23,7 @@ def check_public_key_hash(private_key, target_hash):
 
 # Range private key 
 start_private_key_hex = "0000000000000000000000000000000000000000000000000000000000000000"
-end_private_key_hex = "1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+end_private_key_hex = "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
 
 # Target public key hash 
 target_hash = "739437bb3dd6d1983e66629c5f08c70e52769371"
